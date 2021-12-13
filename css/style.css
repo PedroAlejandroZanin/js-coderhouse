@@ -139,7 +139,8 @@ h6 {
 .carrusel5,
 .carrusel6,
 .carrusel7,
-.carrusel8 {
+.carrusel8,
+.carrusel9 {
   height: 100vh;
   min-height: 100vh;
   background: no-repeat fixed center center;
@@ -176,6 +177,10 @@ h6 {
 
 .carrusel8 {
   background-image: url("../image/bg1.jpg");
+}
+
+.carrusel9 {
+  background-image: url("../image/bg8.jpg");
 }
 
 hr {
