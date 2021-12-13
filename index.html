@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--===== FontaAwesome =====-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+
+    <!--===== Toastify JS =====-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <!--===== Favicon =====-->
+    <link rel="icon" href="image/ps-favicon.ico" />
+
+    <!--===== Google Font =====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!--===== Bootstrap V5.1 =====-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Scripts JS-->
+    <script defer src="js/cards.js"></script>
+    <script defer src="js/carrito.js"></script>
+    <script defer src="js/favoritos.js"></script>
+    <script defer src="login.js"></script>
+
+    <title>PlayStation Home</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <header class="menu">
+        <div class="left">
+            <a href="">
+                <i class="logo-ps fab fa-2x fa-playstation"></i>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid text-center">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button type="button" class="iconoCarrito" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">
+                                <i class="fas fa-user"></i>
+                            </button>
+                        </li>
+                        <button type="button" class="iconoCarrito" id="boton_favoritos" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                        </li>
+                        <li>
+                            <button type="button" class="iconoCarrito" id="boton_carrito" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span id="cantidad_prod_carrito"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item carrusel1 active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>God of War: Ragnarök</h5>
+                    <p>Preventa Disponible</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Last of Us: Part II</h5>
+                    <p>Edición Coleccionista y Especial Disponibles</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Ratchet & Clank: Rift Apart</h5>
+                    <p>Edición Coleccionista y Especial Disponibles</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Demons Soul's Remake</h5>
+                    <p>Edición Coleccionista y Especial Disponibles</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Returnal</h5>
+                    <p>Edición Coleccionista y Especial Disponibles</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel6">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gran Turismo 7</h5>
+                    <p>Preventa PS4/PS5</p>
+                </div>
+            </div>
+
+            <div class="carousel-item carrusel7">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Marvel's Spiderman 2</h5>
+                    <p>Próximamente</p>
+                </div>
+            </div>
+            <div class="carousel-item carrusel8">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>God of War</h5>
+                    <p>Edición Coleccionista y Especial Disponibles</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Carrito -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5>Checkout</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+            <div class="modal-body">
+                <section id="contenedor_carrito">
+                    <!-- Carrito -->
+                </section>
+            </div>
+            <div class="d-flex justify-content-around align-items-center footerCarrito">
+                <p>Total: $ <span id="precio_total"></span></p>
+
+                <div class="botones">
+                    <button type="button" id="vaciar_carrito" data-dismiss="modal">
+                        Vaciar Carrito
+                    </button>
+                    <button type="button" id="boton_checkout" data-dismiss="modal">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Favoritos -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Favoritos</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body">
+            <div class="modal-body">
+                <section id="contenedor_favoritos">
+                    <!-- Favoritos -->
+                </section>
+            </div>
+            <div class="d-flex justify-content-around align-items-center">
+
+                <div class="botones">
+                    <button type="button" id="vaciar_favoritos" data-dismiss="modal">
+                        Vaciar Favoritos
+                    </button>
+                    <button type="button" id="enviar_fav_completo_carrito" data-dismiss="modal">
+                        Enviar a Carrito
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login/Registro -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+        id="offcanvasStart" aria-labelledby="offcanvasStartLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasStartLabel">Inicia Sesión / Registrate</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <form>
+                <div class="mb-3">
+                    <label for="email">Correo Electronico</label>
+                    <form action="">
+                        <input type="email" class="box text-center" placeholder="Ingresá tu email" id="email"
+                            required />
+                    </form>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Contraseña</label>
+                    <form action="">
+                        <input type="password" class="box text-center" placeholder="Contraseña" id="password"
+                            required />
+                    </form>
+                </div>
+                <div class="botones">
+                    <button type="submit" id="botonsub" onclick="login()" >Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <h1 class="text-center">Novedades</h1>
+
+    <!-- Productos -->
+    <section id="contenedor_productos"></section>
+
+    <!-- Contacto -->
+    <footer class="row text-center" id="contacto">
+        <div class="col-12 col-md-4">
+            <h3><b>NEWSLETTER</b></h3>
+            <hr />
+            <form action="#" method="POST">
+                <input type="email" class="box text-center" placeholder="Ingresá tu email" id="email" required />
+                <button type="submit" class="boton-sus">Suscribirse</button>
+            </form>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3><b>MEDIOS DE PAGO</b></h3>
+            <hr />
+            <a href="#"> <i class="fab fa-2x fa-cc-visa rojo"></i></a>
+            <a href="#"> <i class="fab fa-2x fa-cc-paypal azul"></i></a>
+            <a href="#"> <i class="fab fa-2x fa-cc-mastercard amarillo"></i></a>
+            <a href="#"> <i class="fab fa-2x fa-cc-amex verde"></i></a>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <h3><b>REDES</b></h3>
+            <hr />
+            <!-- Instagram -->
+            <a href="https://instagram.com/playstation" target="_blank">
+                <i class="fab fa-2x fa-instagram rojo"></i></a>
+            <!-- Facebook -->
+            <a href="https://facebook.com/playstation" target="_blank">
+                <i class="fab fa-2x fa-facebook azul"></i></a>
+            <!-- Youtube -->
+            <a href="https://www.youtube.com/user/playstation" target="_blank">
+                <i class="fab fa-2x fa-youtube amarillo"></i></a>
+            <a href="https://www.twitter.com/playstation" target="_blank">
+                <i class="fab fa-2x fa-twitter verde"></i></a>
+            <a href="https://www.playstation.com" target="_blank">
+                <i class="fab fa-2x fa-playstation rojo"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!--Scripts BS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+    <!--Scripts Toastify JS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

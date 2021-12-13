@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "playstation";
+  src: url("../font/playstation.woff") format("Woff");
+}
+
+body {
+  background-color: #000;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+body h1 {
+  color: aliceblue;
+  font-family: "playstation";
+  font-size: 50px;
+  margin: 15px auto;
+  letter-spacing: 2px;
+}
+
+/*---- MENU ----*/
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+  width: 100%;
+  z-index: 5;
+  position: fixed;
+}
+
+.menu a {
+  font-family: "playstation";
+  font-size: 20px;
+  margin: 0 1px;
+  color: aliceblue !important;
+}
+
+.menu .logo-ps {
+  margin: 20px;
+  position: fixed;
+  top: -10px;
+  left: 20px;
+}
+
+.iconoCarrito,
+.carritoDisplay button {
+  background-color: transparent;
+  border: none;
+  font-family: "playstation";
+  font-size: 20px;
+  color: aliceblue;
+  margin: 10px 10px;
+}
+
+.offcanvas-body p {
+  color: aliceblue;
+  margin: auto;
+  font-size: 18px;
+}
+
+.botones button,
+.card button {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+  font-size: 15px;
+  color: aliceblue;
+  margin: 10px 10px;
+  padding: 5px;
+  border-radius: 7px;
+  background: linear-gradient(to right, #df0024, #2e6db4);
+  border: none !important;
+}
+
+.card {
+  text-align: center;
+  height: 95%;
+  background-color: #000;
+}
+
+.card h5,
+h6 {
+  font-size: 17px;
+  color: aliceblue;
+}
+
+.card button {
+  width: 100%;
+  margin: 15px auto;
+}
+
+#contenedor_productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 10px auto;
+  background-color: #141414;
+}
+
+#contenedor_productos div {
+  margin: 5px 5px;
+}
+
+.offcanvas {
+  background-color: #000000dd;
+  width: 45%;
+}
+
+.offcanvas-header h5 {
+  font-size: 30px;
+  color: aliceblue;
+  font-family: "playstation";
+}
+
+.carritoDisplay {
+  background-color: #141414;
+  border: 1px solid #000;
+  font-size: 25px;
+  color: aliceblue;
+  padding: 5px;
+}
+
+.carritoDisplay h5 {
+  font-size: 15px;
+  text-align: center;
+}
+
+/*---- CARRUSEL ----*/
+
+.carrusel1,
+.carrusel2,
+.carrusel3,
+.carrusel4,
+.carrusel5,
+.carrusel6,
+.carrusel7,
+.carrusel8 {
+  height: 100vh;
+  min-height: 100vh;
+  background: no-repeat fixed center center;
+  background-size: cover;
+}
+
+.carrusel1 {
+  background-image: url("../image/bg.jpg");
+}
+
+.carrusel2 {
+  background-image: url("../image/bg2.jpg");
+}
+
+.carrusel3 {
+  background-image: url("../image/bg3.jpg");
+}
+
+.carrusel4 {
+  background-image: url("../image/bg4.jpg");
+}
+
+.carrusel5 {
+  background-image: url("../image/bg5.jpg");
+}
+
+.carrusel6 {
+  background-image: url("../image/bg6.jpg");
+}
+
+.carrusel7 {
+  background-image: url("../image/bg7.jpg");
+}
+
+.carrusel8 {
+  background-image: url("../image/bg1.jpg");
+}
+
+hr {
+  color: aliceblue !important;
+}
+
+/*---- FOOTER ----*/
+
+footer {
+  background: url("../image/footer.png") no-repeat fixed center center;
+  background-size: cover;
+  padding: 30px;
+  color: aliceblue;
+  margin: auto !important;
+  position: relative;
+}
+
+footer button,
+input {
+  background-color: #000000;
+  color: aliceblue;
+  font-size: 15px !important;
+  margin: 20px 10px !important;
+  padding: 7px;
+  border: none;
+  border-radius: 5px !important;
+  outline: none;
+}
+
+footer i {
+  margin: 20px 5px !important;
+  color: aliceblue;
+}
+
+footer h3 {
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+/*---- COLORES PS ----*/
+
+.rojo:hover {
+  color: #df0024 !important;
+}
+
+.azul:hover {
+  color: #2e6db4 !important;
+}
+
+.verde:hover {
+  color: #00ac9f !important;
+}
+
+.amarillo:hover {
+  color: #f3c300 !important;
+}
+
+.fas {
+  cursor: pointer;
+}
+
+/*---- QUERYS ----*/
+
+@media only screen and (max-width: 950px) {
+  .offcanvas .carritoDisplay {
+    display: flex;
+    flex-direction: column
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .offcanvas .carritoDisplay div, button, .i {
+    width: 100%;
+    margin: 5px auto !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .footerCarrito {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px auto !important;
+  }
+}
+
+/* .offcanvas-body {
+  color: aliceblue;
+  margin: 0px auto;
+  
+}
+
+.offcanvas-body input {
+  background-color: #141414;
+  color: aliceblue;
+  font-size: 15px !important;
+  border-radius: 5px !important;
+  display: flex;
+  flex-direction: column;
+  outline: none !important;
+  outline-offset:inherit;
+  border: none;
+} */

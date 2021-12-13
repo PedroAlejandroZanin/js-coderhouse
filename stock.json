@@ -1,0 +1,127 @@
+[{
+    "id": 1,
+    "nombre": "Marvel's Spider-Man 2",
+    "img": "image/sp-re.jpg",
+    "precio": 17500,
+    "descripcion": "Edición Estandar (Reservar)"
+  },
+  {
+    "id": 2,
+    "nombre": "God of War: Ragnarok",
+    "img": "image/gowr-re.jpg",
+    "precio": 17500,
+    "descripcion": "Edición Estandar (Reservar)"
+  },
+  {
+    "id": 3,
+    "nombre": "Horizon: Forbiden West",
+    "img": "./image/hfw-ec.webp",
+    "precio": 65500,
+    "descripcion": "Edición Coleccionista (Reservar)"
+  },
+  {
+    "id": 4,
+    "nombre": "Horizon: Forbiden West",
+    "img": "./image/hfw-es.jpg",
+    "precio": 14500,
+    "descripcion": "Edición Steelbook (Reservar)"
+  },
+  {
+    "id": 5,
+    "nombre": "Gran Turismo 7",
+    "img": "image/gt-ed.jpg",
+    "precio": 18700,
+    "descripcion": "Edición Digital Deluxe"
+  },
+  {
+    "id": 6,
+    "nombre": "Gran Turismo 7",
+    "img": "image/gt-es.jpg",
+    "precio": 14500,
+    "descripcion": "Edición Steelbook"
+  },
+  {
+    "id": 7,
+    "nombre": "The Last of Us: Part II",
+    "img": "image/tlou-ec.jpg",
+    "precio": 45000,
+    "descripcion": "Edición Coleccionista"
+  },
+  {
+    "id": 8,
+    "nombre": "The Last of Us: Part II",
+    "img": "image/tlou-es.jpg",
+    "precio": 10500,
+    "descripcion": "Edición Steelbook"
+  },
+  {
+    "id": 9,
+    "nombre": "God of War",
+    "img": "image/gow-ec.jpg",
+    "precio": 35000,
+    "descripcion": "Edición Coleccionista"
+  },
+  {
+    "id": 10,
+    "nombre": "God of War",
+    "img": "image/gow-es.jpg",
+    "precio": 10500,
+    "descripcion": "Edición Steelbook"
+  },
+  {
+    "id": 11,
+    "nombre": "Returnal",
+    "img": "image/ret-ed.jpg",
+    "precio": 18700,
+    "descripcion": "Edición Digital Deluxe"
+  },
+  {
+    "id": 12,
+    "nombre": "Returnal",
+    "img": "image/ret-ee.png",
+    "precio": 12500,
+    "descripcion": "Edición Estandar"
+  },
+  {
+    "id": 13,
+    "nombre": "Demon's Souls Remake",
+    "img": "./image/ds-ec.jpg",
+    "precio": 45350,
+    "descripcion": "Edición Coleccionista"
+  },
+  {
+    "id": 14,
+    "nombre": "Demon's Souls Remake",
+    "img": "./image/ds-ee.jpg",
+    "precio": 12500,
+    "descripcion": "Edición Estandar"
+  },
+  {
+    "id": 15,
+    "nombre": "PlayStation 5",
+    "img": "./image/ps5-es.jpg",
+    "precio": 185000,
+    "descripcion": "Edición Estandar"
+  },
+  {
+    "id": 16,
+    "nombre": "PlayStation 5",
+    "img": "./image/ps5-di.jpg",
+    "precio": 155000,
+    "descripcion": "Edición Digital"
+  },
+  {
+    "id": 17,
+    "nombre": "Ratchet & Clank: Rift Apart",
+    "img": "image/rat-ed.jpeg",
+    "precio": 18700,
+    "descripcion": "Edición Digital Deluxe"
+  },
+  {
+    "id": 18,
+    "nombre": "Ratchet & Clank: Rift Apart",
+    "img": "image/rat-ee.webp",
+    "precio": 12500,
+    "descripcion": "Edición Estandar"
+  }
+]
