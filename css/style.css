@@ -253,7 +253,10 @@ footer h3 {
 }
 
 @media only screen and (max-width: 950px) {
-  .offcanvas .carritoDisplay div, button, .i {
+
+  .offcanvas .carritoDisplay div,
+  button,
+  .i {
     width: 100%;
     margin: 5px auto !important;
   }
@@ -267,21 +270,3 @@ footer h3 {
     margin: 5px auto !important;
   }
 }
-
-/* .offcanvas-body {
-  color: aliceblue;
-  margin: 0px auto;
-  
-}
-
-.offcanvas-body input {
-  background-color: #141414;
-  color: aliceblue;
-  font-size: 15px !important;
-  border-radius: 5px !important;
-  display: flex;
-  flex-direction: column;
-  outline: none !important;
-  outline-offset:inherit;
-  border: none;
-} */

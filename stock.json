@@ -112,13 +112,27 @@
   },
   {
     "id": 17,
+    "nombre": "DualSense",
+    "img": "./image/ds-rb.jpg",
+    "precio": 17500,
+    "descripcion": "Edición Red / Black"
+  },
+  {
+    "id": 18,
+    "nombre": "DualSense",
+    "img": "./image/ds-wh.webp",
+    "precio": 9500,
+    "descripcion": "Edición White"
+  },
+  {
+    "id": 19,
     "nombre": "Ratchet & Clank: Rift Apart",
     "img": "image/rat-ed.jpeg",
     "precio": 18700,
     "descripcion": "Edición Digital Deluxe"
   },
   {
-    "id": 18,
+    "id": 20,
     "nombre": "Ratchet & Clank: Rift Apart",
     "img": "image/rat-ee.webp",
     "precio": 12500,

@@ -88,6 +88,16 @@ function enviarFavoritoAlCarrito(prodId) {
   const indice = favoritos.indexOf(prodFavorito);
   favoritos.splice(indice, 1);
 
+  Toastify({
+    text: `${nombre} enviado al Carrito`,
+    gravity: "bottom",
+    position: "center",
+    style: {
+      background: "linear-gradient(to right, #00ac9f, #00ac9f)",
+    },
+    duration: 2000,
+  }).showToast();
+
   mostrarFavoritos();
 }
 
